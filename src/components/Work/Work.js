@@ -9,7 +9,7 @@ import Imag3 from "../../assets/portfolio-img3.png";
 
 const Work = () => {
   return (
-    <section className="section" id="work">
+    <section className="section lg:mb-40" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <motion.div
@@ -29,7 +29,7 @@ const Work = () => {
                 architecto quis doloremque. Esse sequi reiciendis culpa
                 laboriosam aliquam iure quam.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm mb-4">View all projects</button>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>

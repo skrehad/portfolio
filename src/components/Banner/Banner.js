@@ -9,7 +9,7 @@ import { fadeIn } from "../../variants";
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center lg:mb-28"
       id="home"
     >
       <div className="container mx-auto">
@@ -57,23 +57,25 @@ const Banner = () => {
               viewPort={{ once: false, amount: 0.7 }}
               className="flex max-w-max items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact Me</button>
-              <Link className="text-gradient btn-link">My Portfolio</Link>
+              <Link to="contact">
+                <button className="btn btn-lg">Contact Me</button>
+              </Link>
+              <Link className="ml-5 text-gradient btn-link">My Portfolio</Link>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
               initial="hidden"
               whileInView={"show"}
               viewPort={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:ml-24"
             >
-              <Link>
+              <Link className="cursor-pointer">
                 <FaYoutube />
               </Link>
-              <Link>
+              <Link className="cursor-pointer">
                 <FaGithub />
               </Link>
-              <Link>
+              <Link className="cursor-pointer">
                 <FaDribbble />
               </Link>
             </motion.div>
