@@ -1,5 +1,5 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+// import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { Link } from "react-scroll";
@@ -33,11 +33,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="section lg:mb-52" id="services">
+    <section className="section" id="services">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewPort={{ once: false, amount: 0.7 }}
@@ -61,14 +61,15 @@ const Services = () => {
           >
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description } = service;
 
                 return (
                   <div
                     className="border-b border-white/20 h-[146px] mb-[38px] flex"
                     key={index}
                   >
-                    <div className="max-w-[476px]">
+                    <div>
+                      {/* <div className="max-w-[476px]"> */}
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                         {" "}
                         {name}
@@ -77,12 +78,12 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end">
+                    {/* <div className="flex flex-col flex-1 items-end">
                       <Link className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
                         <BsArrowRight />
                       </Link>
                       <Link className="text-gradient text-sm">{link}</Link>
-                    </div>
+                    </div> */}
                   </div>
                 );
               })}
