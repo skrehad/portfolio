@@ -1,0 +1,14 @@
+
+.image{
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    background-position: top;
+    transition: ease-in-out 8s;  
+}
+.image:hover{
+    background-position: bottom;
+}
+.image1{
+    background-image: url('https://i.ibb.co/27BYxfQ/Home-Hotel-Booking.png');
+}

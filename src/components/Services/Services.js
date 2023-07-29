@@ -8,26 +8,22 @@ const services = [
   {
     name: "Website Design and Development",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos doloribus perferendis similique odio? Debitis voluptatum! ",
-    link: "Learn more",
+      "I provide professional and innovative website design and development services to help businesses establish a strong online presence and achieve their digital goals.",
   },
   {
     name: "Full-Stack Development",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos doloribus perferendis similique odio? Debitis voluptatum! ",
-    link: "Learn more",
+      " As a Full-Stack Developer, I have successfully designed and implemented dynamic web applications, showcasing my proficiency in both front-end and back-end technologies ",
   },
   {
     name: "Responsive Web Design",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos doloribus perferendis similique odio? Debitis voluptatum! ",
-    link: "Learn more",
+      " As a skilled web developer, I craft visually engaging and user-friendly websites through responsive design techniques.",
   },
   {
     name: "Website Maintenance and Support",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos doloribus perferendis similique odio? Debitis voluptatum! ",
-    link: "Learn more",
+      "As a dedicated Website Maintenance and Support professional, I excel in providing assistance and ensuring seamless online experiences for clients.",
   },
 ];
 
@@ -44,9 +40,11 @@ const Services = () => {
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              I,m a Freelancer Front-end Developer with over 3 years of
-              experience
+            <h3 className="h4 max-w-[455px] mb-16">
+              As a MERN stack developer, I specialize in building full-stack web
+              applications using MongoDB, Express.js, React.js, and Node.js,
+              seamlessly integrating the front-end and back-end to create robust
+              and dynamic user experiences.
             </h3>
             <Link to="work">
               <button className="btn btn-sm">See my work</button>
@@ -70,7 +68,7 @@ const Services = () => {
                   >
                     <div>
                       {/* <div className="max-w-[476px]"> */}
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-4">
                         {" "}
                         {name}
                       </h4>

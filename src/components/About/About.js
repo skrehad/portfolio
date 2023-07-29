@@ -28,14 +28,19 @@ const About = () => {
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-3">
+            {/* <h3 className="h3 mb-3">
               I,m a Freelancer Front-end Developer with over 3 years of
               experience
-            </h3>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum
-              voluptas suscipit nulla tenetur laboriosam, ab accusantium
-              quisquam quasi optio!
+            </h3> */}
+            <p className="mb-6 text-xl">
+              As a MERN stack developer, I thrive on transforming innovative
+              ideas into reality through code. With a strong foundation in
+              MongoDB, Express.js, React.js, and Node.js, I possess the skills
+              to architect, develop, and deploy feature-rich web applications
+              that deliver exceptional user experiences. My commitment to
+              staying updated with the latest web technologies empowers me to
+              continuously improve and deliver efficient, scalable, and elegant
+              solutions for every project I undertake.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
