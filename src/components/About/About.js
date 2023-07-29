@@ -28,10 +28,7 @@ const About = () => {
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
-            {/* <h3 className="h3 mb-3">
-              I,m a Freelancer Front-end Developer with over 3 years of
-              experience
-            </h3> */}
+
             <p className="mb-6 text-xl">
               As a MERN stack developer, I thrive on transforming innovative
               ideas into reality through code. With a strong foundation in
@@ -42,27 +39,26 @@ const About = () => {
               continuously improve and deliver efficient, scalable, and elegant
               solutions for every project I undertake.
             </p>
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
+            <div className="grid grid-cols-2 text-center mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                <div className="text-[40px] text-center font-tertiary text-gradient mb-2">
+                  {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-center text-sm tracking-[2px]">
                   Years of <br />
                   Experience
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
-                  k+
+                <div className="text-[40px] text-center font-tertiary text-gradient mb-2">
+                  {inView ? <CountUp start={0} end={20} duration={3} /> : null}+
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-center text-sm tracking-[2px]">
                   Projects <br />
                   Complete
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={12} duration={3} /> : null}
                   k+
@@ -71,13 +67,16 @@ const About = () => {
                   Satisfied <br />
                   Clients
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="flex gap-8 items-center">
+            <div className="grid grid-cols-2 text-center ">
               <Link to="contact">
                 <button className="btn btn-lg">Contact me</button>
               </Link>
-              <Link classID="text-gradient btn-link ">My Portfolio</Link>
+              <Link to="contact">
+                <button className="btn btn-lg">My Portfolio</button>
+              </Link>
+              {/* <Link classID="text-gradient btn-link ">My Portfolio</Link> */}
             </div>
           </motion.div>
         </div>

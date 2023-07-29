@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Work = () => {
   return (
     <div>
-      <section className="section lg:mb-40 lg:mt-40" id="work">
+      <section className="section lg:mb-20 lg:mt-40" id="work">
         <div className="container mx-auto">
           {/* <div>
             <h2 className="h2 leading-light text-accent">
@@ -314,12 +314,8 @@ const Work = () => {
           </div>
         </div>
       </section>
-      <div className="text-center my-10">
-        <Link to="/seeProjectDetails">
-          <button className="btn text-center btn-lg">
-            See Projects Details
-          </button>
-        </Link>
+      <div className="text-center">
+        <p className="text-2xl">Some Project Coming Soon...</p>
       </div>
     </div>
   );

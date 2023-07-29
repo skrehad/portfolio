@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Image from "../../assets/avatar.svg";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -20,7 +20,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewPort={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[50px] font-bold leading-[0.8] lg:text-[110px]"
             >
               Saiful Islam <span>Rehad</span>
             </motion.h1>
@@ -29,11 +29,20 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewPort={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="my-6  text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Developer", 2000, "Designer", 2000]}
+                sequence={[
+                  "Web Developer",
+                  2000,
+                  "React Developer",
+                  2000,
+                  "Frontend Developer",
+                  2000,
+                  "MERN Stack Developer",
+                  2000,
+                ]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -45,10 +54,10 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewPort={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0 "
+              className="mb-8 max-w-lg text-[20px] mx-auto lg:mx-0 "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              fugiat asperiores repudiandae possimus molestiae iusto.
+              A Passionate Front-end React Developer and MERN Stack Developer
+              based in Dhaka, Bangladesh📍
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -69,15 +78,30 @@ const Banner = () => {
               viewPort={{ once: false, amount: 0.7 }}
               className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:ml-24"
             >
-              <Link className="cursor-pointer">
-                <FaYoutube />
-              </Link>
-              <Link className="cursor-pointer">
+              <a
+                className="cursor-pointer"
+                href="https://github.com/skrehad"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
-              </Link>
-              <Link className="cursor-pointer">
-                <FaDribbble />
-              </Link>
+              </a>
+              <a
+                className="cursor-pointer"
+                href="https://www.linkedin.com/in/md-rehad-426baa226/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                className="cursor-pointer"
+                href="https://www.facebook.com/md.rehad.7393"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
             </motion.div>
           </div>
           <motion.div

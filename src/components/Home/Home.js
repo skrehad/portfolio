@@ -7,6 +7,7 @@ import Nav from "../Nav/Nav";
 import Services from "../Services/Services";
 import Work from "../Work/Work";
 import Skills from "../Skills/Skills";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Services></Services>
       <Work></Work>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };
