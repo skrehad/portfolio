@@ -74,7 +74,7 @@ const About = () => {
                 <button className="btn btn-lg">Contact me</button>
               </Link>
               <Link to="contact">
-                <button className="btn btn-lg">My Portfolio</button>
+                <button className="btn btn-lg">My Resume</button>
               </Link>
               {/* <Link classID="text-gradient btn-link ">My Portfolio</Link> */}
             </div>
