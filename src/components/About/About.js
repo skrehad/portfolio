@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { Link } from "react-scroll";
+import resume from "../../assets/Web Developer Resume (Rehad).pdf";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -58,25 +59,14 @@ const About = () => {
                   Complete
                 </div>
               </div>
-              {/* <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
-                  k+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br />
-                  Clients
-                </div>
-              </div> */}
             </div>
             <div className="grid grid-cols-2 text-center ">
               <Link to="contact">
                 <button className="btn btn-lg">Contact me</button>
               </Link>
-              <Link to="contact">
-                <button className="btn btn-lg">My Resume</button>
-              </Link>
-              {/* <Link classID="text-gradient btn-link ">My Portfolio</Link> */}
+              <a href={resume} download="Resume">
+                <button className="btn ml-5 btn-lg">My Resume</button>
+              </a>
             </div>
           </motion.div>
         </div>

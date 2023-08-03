@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-flow-col gap-4">
           <a
             className="text-3xl cursor-pointer"
-            href="https://github.com/skrehad"
+            href="https://www.facebook.com/md.rehad.7393"
             target="_blank"
             rel="noopener  noreferrer"
           >
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
           <a
             className="text-3xl cursor-pointer"
-            href="https://github.com/skrehad"
+            href="https://www.linkedin.com/in/md-rehad"
             target="_blank"
             rel="noopener noreferrer"
           >

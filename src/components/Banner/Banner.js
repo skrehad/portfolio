@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import resume from "../../assets/Web Developer Resume (Rehad).pdf";
 
 const Banner = () => {
   return (
@@ -70,7 +71,9 @@ const Banner = () => {
                 <button className="btn btn-lg">Contact Me</button>
               </Link>
 
-              <button className="btn ml-5 btn-lg">My Resume</button>
+              <a href={resume} download="Resume">
+                <button className="btn ml-5 btn-lg">My Resume</button>
+              </a>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -89,7 +92,7 @@ const Banner = () => {
               </a>
               <a
                 className="cursor-pointer"
-                href="https://www.linkedin.com/in/md-rehad-426baa226/"
+                href="https://www.linkedin.com/in/md-rehad"
                 target="_blank"
                 rel="noopener noreferrer"
               >
