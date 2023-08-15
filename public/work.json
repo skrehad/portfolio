@@ -1,58 +1,56 @@
 [
     {
         "id":1,
-        "writer":"SK Rehad",
-        "blogTitle":"Daily Cup of Yoga",
-        "blogDescription":"A comfortable place to fill up on all things yoga. The cup of yoga appears to be not quite daily anymore, but there’s more than enough to keep my interest, and a large archive. The guest bloggers are good. There seems to be nothing but guest bloggers lately, however, which is possibly a sign that this popular blog is winding down.",
-        "time":"March 11, 2023",
-        "img":"./blog-img/1.jpg",
-        "img2":"./blog-img/1.jpg",
-        "img3":"./blog-img/1.jpg",
-        "img4":"./blog-img/1.jpg"
+        "type":"MERN Stack Website",
+        "name":"Hotel Booking",
+        "liveSite":"https://hotel-booking-6fdb2.web.app/",
+        "clientSite":"https://github.com/skrehad/hotel-booking",
+        "serverSite":"https://github.com/skrehad/hotel-booking-server",
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+        "details":[
+{
+    "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+    "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+    "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+"projectAbout":["a","a","b","c","d","e"],
+"technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
+}            
+        ]
     },
     {
         "id":2,
-        "writer":"SK Rehad",
-        "blogTitle":"Daily Cup of Yoga",
-        "blogDescription":"A comfortable place to fill up on all things yoga. The cup of yoga appears to be not quite daily anymore, but there’s more than enough to keep my interest, and a large archive. The guest bloggers are good. There seems to be nothing but guest bloggers lately, however, which is possibly a sign that this popular blog is winding down.",
-        "time":"March 11, 2023",
-        "img":"./blog-img/1.jpg",
-        "img2":"./blog-img/1.jpg",
-        "img3":"./blog-img/1.jpg",
-        "img4":"./blog-img/1.jpg"
+        "type":"MERN Stack Website",
+        "name":"Hotel Booking",
+        "liveSite":"https://hotel-booking-6fdb2.web.app/",
+        "clientSite":"https://github.com/skrehad/hotel-booking",
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
     },
     {
         "id":3,
-        "writer":"SK Rehad",
-        "blogTitle":"Daily Cup of Yoga",
-        "blogDescription":"A comfortable place to fill up on all things yoga. The cup of yoga appears to be not quite daily anymore, but there’s more than enough to keep my interest, and a large archive. The guest bloggers are good. There seems to be nothing but guest bloggers lately, however, which is possibly a sign that this popular blog is winding down.",
-        "time":"March 11, 2023",
-        "img":"./blog-img/1.jpg",
-        "img2":"./blog-img/1.jpg",
-        "img3":"./blog-img/1.jpg",
-        "img4":"./blog-img/1.jpg"
+        "type":"MERN Stack Website",
+        "name":"Hotel Booking",
+        "liveSite":"https://hotel-booking-6fdb2.web.app/",
+        "clientSite":"https://github.com/skrehad/hotel-booking",
+        "serverSite":"https://github.com/skrehad/hotel-booking-server",
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
     },
     {
         "id":4,
-        "writer":"SK Rehad",
-        "blogTitle":"Daily Cup of Yoga",
-        "blogDescription":"A comfortable place to fill up on all things yoga. The cup of yoga appears to be not quite daily anymore, but there’s more than enough to keep my interest, and a large archive. The guest bloggers are good. There seems to be nothing but guest bloggers lately, however, which is possibly a sign that this popular blog is winding down.",
-        "time":"March 11, 2023",
-        "img":"./blog-img/1.jpg",
-        "img2":"./blog-img/1.jpg",
-        "img3":"./blog-img/1.jpg",
-        "img4":"./blog-img/1.jpg"
+        "type":"MERN Stack Website",
+        "name":"Hotel Booking",
+        "liveSite":"https://hotel-booking-6fdb2.web.app/",
+        "clientSite":"https://github.com/skrehad/hotel-booking",
+        "serverSite":"https://github.com/skrehad/hotel-booking-server",
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
     },
     {
         "id":5,
-        "writer":"SK Rehad",
-        "blogTitle":"Daily Cup of Yoga",
-        "blogDescription":"A comfortable place to fill up on all things yoga. The cup of yoga appears to be not quite daily anymore, but there’s more than enough to keep my interest, and a large archive. The guest bloggers are good. There seems to be nothing but guest bloggers lately, however, which is possibly a sign that this popular blog is winding down.",
-        "time":"March 11, 2023",
-        "img":"./blog-img/1.jpg",
-        "img2":"./blog-img/1.jpg",
-        "img3":"./blog-img/1.jpg",
-        "img4":"./blog-img/1.jpg"
+        "type":"MERN Stack Website",
+        "name":"Hotel Booking",
+        "liveSite":"https://hotel-booking-6fdb2.web.app/",
+        "clientSite":"https://github.com/skrehad/hotel-booking",
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
     }
+    
     
 ]

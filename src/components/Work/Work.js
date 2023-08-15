@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import Imag1 from "../../assets/1.png";
-import Imag2 from "../../assets/2.png";
-import Imag3 from "../../assets/3.png";
-import Imag4 from "../../assets/4.png";
-import Imag5 from "../../assets/5.png";
+// import Imag1 from "../../assets/1.png";
+// import Imag2 from "../../assets/2.png";
+// import Imag3 from "../../assets/3.png";
+// import Imag4 from "../../assets/4.png";
+// import Imag5 from "../../assets/5.png";
 import { Link } from "react-router-dom";
 
 const Work = () => {
+  const [works, setWorks] = useState([]);
+
+  useEffect(() => {
+    fetch("./work.json")
+      .then((res) => res.json())
+      .then((data) => setWorks(data));
+  }, []);
   return (
     <div>
-      <section className="section lg:mb-72 lg:mt-40" id="work">
+      <section className="section lg:my-64" id="work">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-10">
-            <div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewPort={{ once: false, amount: 0.7 }}
+            >
               <h2 className="h2 leading-light text-accent">
                 My Latest <br />
                 Work
@@ -26,252 +38,59 @@ const Work = () => {
               <Link to="seeProjectDetails">
                 <button className="btn btn-sm mb-4">View all projects</button>
               </Link>
-            </div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewPort={{ once: false, amount: 0.7 }}
-              className=" mb-10 lg:mb-0"
-            >
-              <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
-                <img
-                  className="group-hover:scale-125 w-full
+            </motion.div>
+
+            {works.map((work) => (
+              <motion.div
+                key={work.id}
+                variants={fadeIn("up", 0.3)}
+                initial="hidden"
+                whileInView={"show"}
+                viewPort={{ once: false, amount: 0.7 }}
+                className=" mb-10 lg:mb-0"
+              >
+                <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
+                  <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
+                  <img
+                    className="group-hover:scale-125 w-full
                   h-[315px] translate-all duration-500"
-                  src={Imag1}
-                  alt=""
-                />
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
-                  <span className="text-gradient">MERN Stack Website</span>
-                </div>
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
-                  <span className="text-3xl text-white">
-                    Name: Hotel Booking
-                  </span>
-                </div>
+                    src={work.img}
+                    alt=""
+                  />
+                  <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
+                    <span className="text-gradient">{work.type}</span>
+                  </div>
+                  <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
+                    <span className="text-3xl text-white">
+                      Name: {work.name}
+                    </span>
+                  </div>
 
-                <div className="absolute mx-2 text-center gap-2 grid grid-cols-3 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
-                  <a
-                    href="https://hotel-booking-6fdb2.web.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn w-full btn-sm">Live Site</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/hotel-booking"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Client-Side Code</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/hotel-booking-server"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Server-Side Code</button>
-                  </a>
+                  <div className="absolute w-full mx-2 text-center gap-2 grid grid-cols-3 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
+                    <a href={work.liveSite} target="_blank" rel="noreferrer">
+                      <button className="btn w-full btn-sm">Live Site</button>
+                    </a>
+                    <a href={work.clientSite} target="_blank" rel="noreferrer">
+                      <button className="btn btn-sm">Client-Side</button>
+                    </a>
+                    {work.serverSite ? (
+                      <a
+                        href={work.serverSite}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button className="btn btn-sm">Server-Side</button>
+                      </a>
+                    ) : (
+                      <button className="btn btn-sm">No Server-Site</button>
+                    )}
+                  </div>
+                  <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
+                    <button className="btn btn-sm">Show Project Details</button>
+                  </div>
                 </div>
-                <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                  <button className="btn btn-sm">Show Project Details</button>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewPort={{ once: false, amount: 0.7 }}
-              className=" mb-10 lg:mb-0"
-            >
-              <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
-                <img
-                  className="group-hover:scale-125 w-full h-[315px] translate-all duration-500"
-                  src={Imag3}
-                  alt=""
-                />
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
-                  <span className="text-gradient">MERN Stack Website</span>
-                </div>
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
-                  <span className="text-3xl text-white">Name: Easy Shop</span>
-                </div>
-
-                <div className="absolute mx-2 text-center gap-2 grid grid-cols-3 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
-                  <a
-                    href="https://easy-shop-20d6f.web.app"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn w-full btn-sm">Live Site</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/easy-shop"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Client-Side Code</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/easy-shop-server"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Server-Side Code</button>
-                  </a>
-                </div>
-                <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                  <button className="btn btn-sm">Show Project Details</button>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewPort={{ once: false, amount: 0.7 }}
-              className=" mb-10 lg:mb-0"
-            >
-              <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
-                <img
-                  className="group-hover:scale-125 w-full h-[315px] translate-all duration-500"
-                  src={Imag2}
-                  alt=""
-                />
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
-                  <span className="text-gradient">Frontend Website</span>
-                </div>
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
-                  <span className="text-3xl text-white">
-                    Name: SK GYM Website
-                  </span>
-                </div>
-
-                <div className="absolute  gap-2 w-full grid grid-cols-2 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
-                  <a
-                    href="https://gym-website-4d719.web.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn w-full btn-sm">Live Site</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/SK-GYM-Website"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn  w-full btn-sm">
-                      Client-Side Code
-                    </button>
-                  </a>
-                </div>
-                <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                  <button className="btn btn-sm">Show Project Details</button>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewPort={{ once: false, amount: 0.7 }}
-              className=" mb-10 lg:mb-0"
-            >
-              <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
-                <img
-                  className="group-hover:scale-125 w-full h-[315px] translate-all duration-500"
-                  src={Imag4}
-                  alt=""
-                />
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
-                  <span className="text-gradient">Frontend Website</span>
-                </div>
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
-                  <span className="text-3xl text-white">
-                    Name: Portfolio Website
-                  </span>
-                </div>
-
-                <div className="absolute  gap-2 w-full grid grid-cols-2 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
-                  <a
-                    href="https://portfolio-5db0d.web.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn w-full btn-sm">Live Site</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/portfolio"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn  w-full btn-sm">
-                      Client-Side Code
-                    </button>
-                  </a>
-                </div>
-                <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                  <button className="btn btn-sm">Show Project Details</button>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewPort={{ once: false, amount: 0.7 }}
-              className=" mb-10 lg:mb-0"
-            >
-              <div className="group  relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 translate-all duration-300"></div>
-                <img
-                  className="group-hover:scale-125 w-full h-[315px] translate-all duration-500"
-                  src={Imag5}
-                  alt=""
-                />
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-60 transition-all duration-700 z-50 ">
-                  <span className="text-gradient">MERN Stack Website</span>
-                </div>
-                <div className="absolute text-center w-full bottom-full group-hover:bottom-48 transition-all duration-700 z-50 ">
-                  <span className="text-3xl text-white">
-                    Name: Doctor Portal
-                  </span>
-                </div>
-
-                <div className="absolute mx-2 text-center gap-2 grid grid-cols-3 bottom-full group-hover:bottom-32 transition-all duration-700 z-50 ">
-                  <a
-                    href="https://doctors-portal-a9d65.web.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn w-full btn-sm">Live Site</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/doctor-portal"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Client-Side Code</button>
-                  </a>
-                  <a
-                    href="https://github.com/skrehad/doctor-portal-sevser-site"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="btn btn-sm">Server-Side Code</button>
-                  </a>
-                </div>
-                <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                  <button className="btn btn-sm">Show Project Details</button>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
