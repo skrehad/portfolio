@@ -39,7 +39,7 @@ const Services = () => {
             viewPort={{ once: false, amount: 0.7 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 text-accent">What I Do.</h2>
+            <h2 className="h2 mt-80 md:mt-0 lg:mt-0 text-accent">What I Do.</h2>
             <h3 className="h4 max-w-[455px] mb-16">
               As a MERN stack developer, I specialize in building full-stack web
               applications using MongoDB, Express.js, React.js, and Node.js,
@@ -63,25 +63,17 @@ const Services = () => {
 
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                    className="border-b border-white/20 mb-[25px] flex"
                     key={index}
                   >
                     <div>
-                      {/* <div className="max-w-[476px]"> */}
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-4">
-                        {" "}
+                      <h4 className="text-[20px]  tracking-wider font-primary font-semibold mb-4">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-light">
+                      <p className="font-secondary  leading-light">
                         {description}
                       </p>
                     </div>
-                    {/* <div className="flex flex-col flex-1 items-end">
-                      <Link className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
-                        <BsArrowRight />
-                      </Link>
-                      <Link className="text-gradient text-sm">{link}</Link>
-                    </div> */}
                   </div>
                 );
               })}

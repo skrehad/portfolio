@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import image from "../../assets/about1.jpg";
 import { Link } from "react-scroll";
 import resume from "../../assets/Web Developer Resume (Rehad).pdf";
 
@@ -19,8 +20,10 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewPort={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-          ></motion.div>
+            className="flex-1  bg-contain  mix-blend-lighten"
+          >
+            <img src={image} alt="" srcset="" />
+          </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
