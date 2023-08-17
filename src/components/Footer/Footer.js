@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer mt-20 border-t text-center footer-center bg-base-200 pt-4 text-base-content">
       <div className="grid w-[300px] mx-auto grid-flow-col gap-4">
         <a href="#about" className="link link-hover">
-          About us
+          About Me
         </a>
         <a href="#work" className="link link-hover">
           Work

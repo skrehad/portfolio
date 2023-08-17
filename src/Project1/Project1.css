@@ -1,19 +1,10 @@
-
 .image{
-    height: 400px;
+    /* height: 500px; */
     background-size: cover;
-    background-position: top;
+    background-position: top left;
     transition: ease-in-out 8s;  
+    background-repeat: no-repeat;
 }
 .image:hover{
     background-position: bottom;
 }
-/* .image1{
-    background-image: url('https://i.ibb.co/27BYxfQ/Home-Hotel-Booking.png');
-}
-.image2{
-    background-image: url('https://i.ibb.co/27BYxfQ/Home-Hotel-Booking.png');
-}
-.image3{
-    background-image: url('https://i.ibb.co/27BYxfQ/Home-Hotel-Booking.png');
-} */

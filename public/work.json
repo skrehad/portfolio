@@ -6,69 +6,39 @@
         "liveSite":"https://hotel-booking-6fdb2.web.app/",
         "clientSite":"https://github.com/skrehad/hotel-booking",
         "serverSite":"https://github.com/skrehad/hotel-booking-server",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-        "details":[
-{
-    "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-    "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-    "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-"projectAbout":["a","a","b","c","d","e"],
-"technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
-}            
-        ]
-    },
+        "img":"https://i.ibb.co/M2HmLjd/1.png"       
+        },
     {
         "id":2,
-        "type":"MERN Stack Website",
+        "type":"Frontend Website",
         "name":"GYM Website",
-        "liveSite":"https://hotel-booking-6fdb2.web.app/",
-        "clientSite":"https://github.com/skrehad/hotel-booking",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-        "details":[
-            {
-                "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-                "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-                "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-            "projectAbout":["a","a","b","c","d","e"],
-            "technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
-            }            
-                    ]
-    },
+        "liveSite":"https://gym-website-4d719.web.app/",
+        "clientSite":"https://github.com/skrehad/SK-GYM-Website",
+        "img":"https://i.ibb.co/hLWXfx0/2.png"
+        },
     {
         "id":3,
         "type":"MERN Stack Website",
-        "name":" Easy Shop",
-        "liveSite":"https://hotel-booking-6fdb2.web.app/",
-        "clientSite":"https://github.com/skrehad/hotel-booking",
-        "serverSite":"https://github.com/skrehad/hotel-booking-server",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-        "details":[
-            {
-                "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-                "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-                "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
-            "projectAbout":["a","a","b","c","d","e"],
-            "technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
-            }            
-                    ]
-    },
+        "name":"Easy Shop",
+        "liveSite":"https://easy-shop-20d6f.web.app/",
+        "clientSite":"https://github.com/skrehad/easy-shop",
+        "serverSite":"https://github.com/skrehad/easy-shop-server",
+        "img":"https://i.ibb.co/G2zRv6K/3.png"          
+        },   
     {
         "id":4,
         "type":"MERN Stack Website",
-        "name":"Hotel Booking",
-        "liveSite":"https://hotel-booking-6fdb2.web.app/",
-        "clientSite":"https://github.com/skrehad/hotel-booking",
-        "serverSite":"https://github.com/skrehad/hotel-booking-server",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
-    },
+        "name":"Doctor Portal Website",
+        "liveSite":"https://doctors-portal-a9d65.web.app/",
+        "clientSite":"https://github.com/skrehad/doctor-portal",
+        "serverSite":"https://github.com/skrehad/doctor-portal-sevser-site",
+        "img":"https://i.ibb.co/mHNZD7n/5.png"},
     {
-        "id":5,
-        "type":"MERN Stack Website",
-        "name":"Hotel Booking",
-        "liveSite":"https://hotel-booking-6fdb2.web.app/",
-        "clientSite":"https://github.com/skrehad/hotel-booking",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
-    }
-    
-    
+            "id":5,
+            "type":"Frontend Website",
+            "name":"Portfolio Website",
+            "liveSite":"https://portfolio-5db0d.web.app/",
+            "clientSite":"https://github.com/skrehad/portfolio",
+            "img":"https://i.ibb.co/vv8yJGQ/4.png"
+            }
 ]
