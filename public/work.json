@@ -20,19 +20,37 @@
     {
         "id":2,
         "type":"MERN Stack Website",
-        "name":"Hotel Booking",
+        "name":"GYM Website",
         "liveSite":"https://hotel-booking-6fdb2.web.app/",
         "clientSite":"https://github.com/skrehad/hotel-booking",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+        "details":[
+            {
+                "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+                "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+                "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+            "projectAbout":["a","a","b","c","d","e"],
+            "technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
+            }            
+                    ]
     },
     {
         "id":3,
         "type":"MERN Stack Website",
-        "name":"Hotel Booking",
+        "name":" Easy Shop",
         "liveSite":"https://hotel-booking-6fdb2.web.app/",
         "clientSite":"https://github.com/skrehad/hotel-booking",
         "serverSite":"https://github.com/skrehad/hotel-booking-server",
-        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png"
+        "img":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+        "details":[
+            {
+                "img1":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+                "img2":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+                "img3":"https://imgtr.ee/images/2023/08/15/9e95fa1a41fa2a0c1af8ef2b64cb07c4.png",
+            "projectAbout":["a","a","b","c","d","e"],
+            "technologyUsed":"React, Node js, Express js, MongoDB, Firebase, tailwind,dasy UI, react-router, react day-picker,react-hot-toast,react-icon, etc…"
+            }            
+                    ]
     },
     {
         "id":4,

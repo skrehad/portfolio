@@ -11,7 +11,7 @@ function App() {
       element: <Home></Home>,
     },
     {
-      path: "/seeProjectDetails",
+      path: "/project/:projectId",
       element: <Project1></Project1>,
     },
   ]);

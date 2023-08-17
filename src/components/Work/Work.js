@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-// import Imag1 from "../../assets/1.png";
-// import Imag2 from "../../assets/2.png";
-// import Imag3 from "../../assets/3.png";
-// import Imag4 from "../../assets/4.png";
-// import Imag5 from "../../assets/5.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("./work.json")
       .then((res) => res.json())
       .then((data) => setWorks(data));
   }, []);
+  const handleShowDetails = (projectId) => {
+    navigate(`/project/${projectId}`);
+  };
+
   return (
     <div>
       <section className="section lg:my-64" id="work">
@@ -86,7 +86,12 @@ const Work = () => {
                     )}
                   </div>
                   <div className="absolute w-full text-center bottom-full group-hover:bottom-16 transition-all duration-700 z-50 ">
-                    <button className="btn btn-sm">Show Project Details</button>
+                    <button
+                      className="btn btn-sm"
+                      onClick={() => handleShowDetails(work.id)}
+                    >
+                      Show Project Details
+                    </button>
                   </div>
                 </div>
               </motion.div>
