@@ -37,10 +37,10 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewPort={{ once: false, amount: 0.7 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex flex-col justify-center flex-1 mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 mt-80 md:mt-0 lg:mt-0 text-accent">What I Do.</h2>
-            <h3 className="h4 max-w-[455px] mb-16">
+            <h2 className="h2 text-accent mb-4">What I Do.</h2>
+            <h3 className="h4 max-w-[455px] text-left mb-8">
               As a MERN stack developer, I specialize in building full-stack web
               applications using MongoDB, Express.js, React.js, and Node.js,
               seamlessly integrating the front-end and back-end to create robust
@@ -50,6 +50,7 @@ const Services = () => {
               <button className="btn btn-sm">See my work</button>
             </Link>
           </motion.div>
+
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"

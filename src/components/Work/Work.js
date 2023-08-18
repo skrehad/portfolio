@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div>
-      <section className="section lg:my-64" id="work">
+      <section className="section lg:mb-64 lg:mt-80" id="work">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
             <motion.div
