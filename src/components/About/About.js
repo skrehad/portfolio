@@ -31,7 +31,7 @@ const About = () => {
             viewPort={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
+            <h2 className="h2 ">About me.</h2>
 
             <p className="mb-6 text-xl">
               As a MERN stack developer, I thrive on transforming innovative

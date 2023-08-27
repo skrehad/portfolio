@@ -39,7 +39,7 @@ const Services = () => {
             viewPort={{ once: false, amount: 0.7 }}
             className="flex flex-col justify-center flex-1 mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 text-accent mb-4">What I Do.</h2>
+            <h2 className="h2  mb-4">What I Do.</h2>
             <h3 className="h4 max-w-[455px] text-left mb-8">
               As a MERN stack developer, I specialize in building full-stack web
               applications using MongoDB, Express.js, React.js, and Node.js,
