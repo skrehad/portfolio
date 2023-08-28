@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { AiFillHtml5 } from "react-icons/ai";
-import { BsFiletypeCss } from "react-icons/bs";
+import { BsFiletypeCss, BsBootstrapFill } from "react-icons/bs";
 import {
   SiTailwindcss,
   SiDaisyui,
@@ -30,6 +30,9 @@ const Skills = () => {
           </div>
           <div className="text-[50px]">
             <BsFiletypeCss></BsFiletypeCss>
+          </div>
+          <div className="text-[50px]">
+            <BsBootstrapFill></BsBootstrapFill>
           </div>
           <div className="text-[60px]">
             <DiJavascript1></DiJavascript1>
