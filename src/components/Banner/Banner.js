@@ -42,7 +42,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className=""
+                className="text-orange-200"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -80,7 +80,7 @@ const Banner = () => {
               className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:ml-24"
             >
               <a
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-orange-200"
                 href="https://github.com/skrehad"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +88,7 @@ const Banner = () => {
                 <FaGithub />
               </a>
               <a
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-orange-200"
                 href="https://www.linkedin.com/in/md-rehad"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +96,7 @@ const Banner = () => {
                 <FaLinkedin />
               </a>
               <a
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-orange-200"
                 href="https://www.facebook.com/md.rehad.7393"
                 target="_blank"
                 rel="noopener noreferrer"

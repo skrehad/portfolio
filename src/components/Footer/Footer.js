@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="w-[120px] my-2 mx-auto">
         <div className="grid grid-flow-col gap-4">
           <a
-            className="text-3xl cursor-pointer"
+            className="text-3xl hover:text-orange-200 cursor-pointer"
             href="https://www.facebook.com/md.rehad.7393"
             target="_blank"
             rel="noopener  noreferrer"
@@ -29,7 +29,7 @@ const Footer = () => {
             <FaFacebook />
           </a>
           <a
-            className="text-3xl cursor-pointer"
+            className="text-3xl hover:text-orange-200 cursor-pointer"
             href="https://www.linkedin.com/in/md-rehad"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            className="text-3xl cursor-pointer"
+            className="text-3xl hover:text-orange-200 cursor-pointer"
             href="https://github.com/skrehad"
             target="_blank"
             rel="noopener noreferrer"

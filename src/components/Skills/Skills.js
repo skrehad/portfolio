@@ -23,42 +23,42 @@ const Skills = () => {
       className="my-10 text-center"
     >
       <div className="">
-        <div className="text-4xl mb-10 my-auto">My Skills</div>
+        <div className="text-4xl text-orange-200 mb-10 my-auto">My Skills</div>
         <div className="lg:flex mx-10 grid grid-cols-4 justify-center text-center gap-5">
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <AiFillHtml5></AiFillHtml5>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <BsFiletypeCss></BsFiletypeCss>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <BsBootstrapFill></BsBootstrapFill>
           </div>
-          <div className="text-[60px]">
+          <div className="text-[60px] cursor-pointer hover:text-orange-200">
             <DiJavascript1></DiJavascript1>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <FaReact></FaReact>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <SiTailwindcss></SiTailwindcss>
           </div>
-          <div className="text-[60px]">
+          <div className="text-[60px] cursor-pointer hover:text-orange-200">
             <SiDaisyui></SiDaisyui>
           </div>
-          <div className="text-[60px]">
+          <div className="text-[60px] cursor-pointer hover:text-orange-200">
             <DiNodejs></DiNodejs>
           </div>
-          <div className="text-[60px]">
+          <div className="text-[60px] cursor-pointer hover:text-orange-200">
             <DiMongodb></DiMongodb>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <SiExpress></SiExpress>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <SiFirebase></SiFirebase>
           </div>
-          <div className="text-[50px]">
+          <div className="text-[50px] cursor-pointer hover:text-orange-200">
             <FiFigma></FiFigma>
           </div>
         </div>

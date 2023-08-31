@@ -27,7 +27,7 @@ const Work = () => {
               whileInView={"show"}
               viewPort={{ once: false, amount: 0.7 }}
             >
-              <h2 className="h2 leading-light ">
+              <h2 className="h2 text-orange-200 leading-light ">
                 My Latest <br />
                 Work
               </h2>

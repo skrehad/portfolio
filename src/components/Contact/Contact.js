@@ -45,7 +45,7 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h4 className="text-xl uppercase  font-medium mb-2 tracking-wide">
+              <h4 className="text-xl uppercase text-orange-200 font-medium mb-2 tracking-wide">
                 Let's keep in touch!
               </h4>
               <h2 className="text-[45px] leading-none mb-12">

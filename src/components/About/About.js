@@ -31,7 +31,7 @@ const About = () => {
             viewPort={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 ">About me.</h2>
+            <h2 className="h2 text-orange-200">About me.</h2>
 
             <p className="mb-6 text-xl">
               As a MERN stack developer, I thrive on transforming innovative
@@ -45,7 +45,7 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 text-center mb-12">
               <div>
-                <div className="text-[40px] text-center font-tertiary text-gradient mb-2">
+                <div className="text-[40px] text-center font-tertiary text-orange-200 mb-2">
                   {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-center text-sm tracking-[2px]">
@@ -54,7 +54,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className="text-[40px] text-center font-tertiary text-gradient mb-2">
+                <div className="text-[40px] text-center font-tertiary text-orange-200 mb-2">
                   {inView ? <CountUp start={0} end={50} duration={3} /> : null}+
                 </div>
                 <div className="font-primary text-center text-sm tracking-[2px]">
